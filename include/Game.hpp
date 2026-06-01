@@ -91,7 +91,7 @@ private:
     HUD            hud_;
     ParticleSystem particles_;
 
-    // ── Font (sf::Text objects are created on the fly in render methods) ──
+    // ── Font ─────────────────────────────────────────────────────────────
     sf::Font font_;
     bool     fontLoaded_{ false };
 };

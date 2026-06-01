@@ -5,7 +5,6 @@
 
 class Player;
 
-// sf::Text can't be default-constructed in SFML 3 (needs a font).
 // We use std::optional so the members start empty and are created
 // only once the font is successfully loaded.
 class HUD {

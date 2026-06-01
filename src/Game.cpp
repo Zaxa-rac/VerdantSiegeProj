@@ -364,7 +364,6 @@ void Game::render() {
     if (brightness_ < 10) {
         sf::RectangleShape darkOverlay({ VS::WINDOW_W, VS::WINDOW_H });
         
-        // Use standard C++ std::uint8_t instead of sf::Uint8
         std::uint8_t alpha = static_cast<std::uint8_t>(255 - (brightness_ * 25));
         darkOverlay.setFillColor(sf::Color{ 0, 0, 0, alpha });
     
@@ -402,7 +401,7 @@ void Game::renderMainMenu() {
 
     std::string diffLabel = "Difficulty: " + difficulty_.name;
     std::string scoreLabel = "High Score: " + std::to_string(highScore_);
-    std::string labels[] = { "Start Game", "Settings (Coming Soon)", scoreLabel, diffLabel };
+    std::string labels[] = { "Start Game", "Brightness", scoreLabel, diffLabel };
     
     for (int i = 0; i < 4; ++i) {
         sf::Text item(font_, labels[i], 28);

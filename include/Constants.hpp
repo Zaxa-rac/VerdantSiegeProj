@@ -5,8 +5,8 @@
 namespace VS {
 
 // ── Window ────────────────────────────────────────────────────────────────────
-constexpr unsigned int WINDOW_W     = 1280;
-constexpr unsigned int WINDOW_H     = 720;
+constexpr unsigned int WINDOW_W     = 1920;
+constexpr unsigned int WINDOW_H     = 1080;
 constexpr unsigned int TARGET_FPS   = 60;
 constexpr char         WINDOW_TITLE[] = "Verdant Siege";
 
@@ -18,7 +18,7 @@ constexpr float ARENA_H = static_cast<float>(WINDOW_H);
 
 // ── Player ────────────────────────────────────────────────────────────────────
 constexpr int   PLAYER_MAX_HP          = 100;
-constexpr float PLAYER_SPEED           = 220.f;
+constexpr float PLAYER_SPEED           = 250.f;
 constexpr int   PLAYER_MAX_BARRIERS    = 3;
 constexpr float PLAYER_BARRIER_REGEN   = 8.f;
 constexpr float PLAYER_SHOOT_COOLDOWN  = 0.25f;
@@ -43,19 +43,19 @@ constexpr int   BEETLE_DAMAGE  = 10;
 constexpr float BEETLE_RADIUS  = 20.f;
 
 // ── Enemy – MosquitoDrone ─────────────────────────────────────────────────────
-constexpr float MOSQUITO_SPEED        = 200.f;
+constexpr float MOSQUITO_SPEED        = 175.f;
 constexpr int   MOSQUITO_HP           = 30;
 constexpr int   MOSQUITO_DAMAGE       = 0;
-constexpr float MOSQUITO_ORBIT_RADIUS = 200.f;
+constexpr float MOSQUITO_ORBIT_RADIUS = 250.f;
 constexpr float MOSQUITO_FIRE_RATE    = 2.f;
 constexpr float MOSQUITO_RADIUS       = 14.f;
 
 // ── Enemy – SludgeCrawler ─────────────────────────────────────────────────────
 constexpr float SLUDGE_SPEED         = 45.f;
-constexpr int   SLUDGE_HP            = 55;
+constexpr int   SLUDGE_HP            = 100;
 constexpr int   SLUDGE_DAMAGE        = 5;
 constexpr float SLUDGE_SLOW_FACTOR   = 0.5f;
-constexpr float SLUDGE_TRAIL_TTL     = 6.f;
+constexpr float SLUDGE_TRAIL_TTL     = 9.f;
 constexpr float SLUDGE_RADIUS        = 16.f;
 
 // ── Enemy – ScorpionMech (boss) ───────────────────────────────────────────────
@@ -68,7 +68,7 @@ constexpr int   BOSS_WAVE_INTERVAL = 5;
 
 // ── Pickups ───────────────────────────────────────────────────────────────────
 constexpr int   POWER_CELL_VALUE     = 10;
-constexpr int   REPAIR_KIT_HP        = 25;
+constexpr int   REPAIR_KIT_HP        = 30;
 constexpr float FERTILISER_DURATION  = 10.f;
 constexpr float FERTILISER_FIRE_MULT = 2.f;
 constexpr float PICKUP_RADIUS        = 14.f;
@@ -81,10 +81,10 @@ constexpr char HIGHSCORE_FILE[]  = "highscore.dat";
 constexpr char WAVES_CFG[]       = "config/waves.cfg";
 constexpr char SETTINGS_CFG[]    = "config/settings.cfg";
 
-// ── Colours  (sf::Uint8 is gone in SFML 3 — use uint8_t casts) ───────────────
+// ── Colours ───────────────────────────────────────────────────────────────────────────
 inline const sf::Color COLOR_HP_BAR       {  80, 200,  80 };
 inline const sf::Color COLOR_HP_BG        {  60,  60,  60 };
 inline const sf::Color COLOR_BARRIER_TINT {  50, 200, 100, 180 };
 inline const sf::Color COLOR_ACID_TRAIL   {  90, 180,  30, 120 };
 
-} // namespace VS
+} 

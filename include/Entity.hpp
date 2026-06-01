@@ -3,11 +3,7 @@
 
 // ─────────────────────────────────────────────────────────────────────────────
 //  Entity  –  abstract base for every game object.
-//
-//  sf::Sprite is removed: SFML 3 requires a texture at construction time,
-//  which we don't have yet (placeholder mode uses shapes).
-//  Each concrete subclass owns its own sf::CircleShape or sf::RectangleShape
-//  and overrides getBounds() to return that shape's global bounds.
+
 // ─────────────────────────────────────────────────────────────────────────────
 class Entity {
 public:
