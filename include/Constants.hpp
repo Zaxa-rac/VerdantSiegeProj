@@ -25,7 +25,7 @@ constexpr float PLAYER_SHOOT_COOLDOWN  = 0.25f;
 constexpr float PLAYER_RADIUS          = 18.f;
 
 // ── Spore Shot ────────────────────────────────────────────────────────────────
-constexpr float SPORE_SPEED   = 550.f;
+constexpr float SPORE_SPEED   = 700.f;
 constexpr int   SPORE_DAMAGE  = 20;
 constexpr float SPORE_RANGE   = 700.f;
 constexpr float SPORE_RADIUS  = 6.f;
@@ -51,8 +51,8 @@ constexpr float MOSQUITO_FIRE_RATE    = 2.f;
 constexpr float MOSQUITO_RADIUS       = 14.f;
 
 // ── Enemy – SludgeCrawler ─────────────────────────────────────────────────────
-constexpr float SLUDGE_SPEED         = 45.f;
-constexpr int   SLUDGE_HP            = 100;
+constexpr float SLUDGE_SPEED         = 60.f;
+constexpr int   SLUDGE_HP            = 120;
 constexpr int   SLUDGE_DAMAGE        = 5;
 constexpr float SLUDGE_SLOW_FACTOR   = 0.5f;
 constexpr float SLUDGE_TRAIL_TTL     = 9.f;
@@ -60,8 +60,8 @@ constexpr float SLUDGE_RADIUS        = 16.f;
 
 // ── Enemy – ScorpionMech (boss) ───────────────────────────────────────────────
 constexpr float BOSS_SPEED         = 120.f;
-constexpr int   BOSS_HP            = 500;
-constexpr int   BOSS_DAMAGE        = 20;
+constexpr int   BOSS_HP            = 600;
+constexpr int   BOSS_DAMAGE        = 50;
 constexpr float BOSS_PHASE2_THRESH = 0.5f;
 constexpr float BOSS_RADIUS        = 40.f;
 constexpr int   BOSS_WAVE_INTERVAL = 5;
