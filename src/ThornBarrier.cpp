@@ -27,6 +27,6 @@ void ThornBarrier::update(float dt) {
     c.a = static_cast<std::uint8_t>(180.f * alpha);  // std::uint8_t
     rect_.setFillColor(c);
 }
-void ThornBarrier::draw(sf::RenderWindow& window)s {
+void ThornBarrier::draw(sf::RenderWindow& window) {
     if (alive_) window.draw(rect_);
 }
