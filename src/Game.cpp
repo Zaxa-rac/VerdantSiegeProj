@@ -247,10 +247,25 @@ void Game::checkPickupsVsPlayer() {
 void Game::checkBarriersVsEnemies(float dt) {
     for (auto& barrier : barriers_) {
         if (!barrier->isAlive()) continue;
+        
         for (auto& enemy : enemies_) {
             if (!enemy->isAlive()) continue;
-            if (barrier->getBounds().findIntersection(enemy->getBounds())) {
-                enemy->takeDamage(static_cast<int>(barrier->getDamage() * dt));
+            
+            float dist = std::hypot(barrier->getPosition().x - enemy->getPosition().x,
+                                    barrier->getPosition().y - enemy->getPosition().y);
+            if (dist < 105.f) {
+
+                enemy->takeDamage(static_cast<int>(barrier->getDamage() * dt) + 1); 
+               
+                sf::Vector2f pushDir = enemy->getPosition() - barrier->getPosition();
+                float pushDist = std::hypot(pushDir.x, pushDir.y);
+                
+                if (pushDist > 0.001f) {
+                    pushDir.x /= pushDist;
+                    pushDir.y /= pushDist;
+                    
+                    enemy->pushBack(pushDir * 1000.f * dt); 
+                }
                 if (!enemy->isAlive()) {
                     auto pickup = enemy->onDeath();
                     if (pickup) pickups_.push_back(std::move(pickup));
@@ -258,7 +273,7 @@ void Game::checkBarriersVsEnemies(float dt) {
             }
         }
     }
-}
+}   
 
 void Game::checkAcidTilesVsEntities(float /*dt*/) {
     constexpr float tileRadius = 16.f;
