@@ -1,0 +1,3 @@
+C:/Users/aleks/Desktop/programing/projects/VerdantSiege/build/CMakeFiles/VerdantSiege.dir
+C:/Users/aleks/Desktop/programing/projects/VerdantSiege/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/aleks/Desktop/programing/projects/VerdantSiege/build/CMakeFiles/ZERO_CHECK.dir

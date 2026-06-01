@@ -1,0 +1,10 @@
+^C:\USERS\ALEKS\DESKTOP\PROGRAMING\PROJECTS\VERDANTSIEGE\BUILD\CMAKEFILES\63FAFBBBAD397CDA9392DCA6012B0FD4\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/aleks/Desktop/programing/projects/VerdantSiege -BC:/Users/aleks/Desktop/programing/projects/VerdantSiege/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/aleks/Desktop/programing/projects/VerdantSiege/build/VerdantSiege.slnx
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

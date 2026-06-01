@@ -1,0 +1,10 @@
+^C:\USERS\ALEKS\DESKTOP\PROGRAMING\PROJECTS\VERDANTSIEGE\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/aleks/Desktop/programing/projects/VerdantSiege -BC:/Users/aleks/Desktop/programing/projects/VerdantSiege/build --check-stamp-file C:/Users/aleks/Desktop/programing/projects/VerdantSiege/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
