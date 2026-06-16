@@ -4,7 +4,6 @@
 // ─────────────────────────────────────────────────────────────────────────────
 //  Entity  –  abstract base for every game object.
 
-// ─────────────────────────────────────────────────────────────────────────────
 class Entity {
 public:
     explicit Entity(sf::Vector2f position = {0.f, 0.f});
@@ -13,7 +12,7 @@ public:
     virtual void update(float dt) = 0;
     virtual void draw(sf::RenderWindow& window) = 0;
 
-    // Subclasses override this to return their shape's bounds
+    // Subclasses override this to return their sprites bounds
     virtual sf::FloatRect getBounds() const {
         return { {position_.x - 10.f, position_.y - 10.f}, {20.f, 20.f} };
     }
