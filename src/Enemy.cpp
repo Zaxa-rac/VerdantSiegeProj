@@ -287,7 +287,7 @@ void ScorpionMech::attack(Player& target, float dt) {
         }
     } else {
         fireTimer_ += dt; //pre shooting animation handled
-        float cooldown = 2.0f; // shoots every 2 seconds in phase 1
+        float cooldown = 1.0f; // shoots every 2 seconds in phase 1
             if (fireTimer_ >= cooldown - 0.3f && !isShooting_){ 
                 animator_.play("Phase1_Shoot");
                 isShooting_ = true;
