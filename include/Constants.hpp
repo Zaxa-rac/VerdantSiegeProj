@@ -38,21 +38,21 @@ constexpr float BARRIER_H           = 20.f;
 
 // ── Enemy – BeetleBot ─────────────────────────────────────────────────────────
 constexpr float BEETLE_SPEED   = 90.f;
-constexpr int   BEETLE_HP      = 80;
-constexpr int   BEETLE_DAMAGE  = 10;
+constexpr int   BEETLE_HP      = 120;
+constexpr int   BEETLE_DAMAGE  = 15;
 constexpr float BEETLE_RADIUS  = 20.f;
 
 // ── Enemy – MosquitoDrone ─────────────────────────────────────────────────────
 constexpr float MOSQUITO_SPEED        = 175.f;
-constexpr int   MOSQUITO_HP           = 30;
-constexpr int   MOSQUITO_DAMAGE       = 0;
+constexpr int   MOSQUITO_HP           = 40;
+constexpr int   MOSQUITO_DAMAGE       = 20;
 constexpr float MOSQUITO_ORBIT_RADIUS = 250.f;
 constexpr float MOSQUITO_FIRE_RATE    = 2.f;
 constexpr float MOSQUITO_RADIUS       = 14.f;
 
 // ── Enemy – SludgeCrawler ─────────────────────────────────────────────────────
 constexpr float SLUDGE_SPEED         = 60.f;
-constexpr int   SLUDGE_HP            = 120;
+constexpr int   SLUDGE_HP            = 200.f;
 constexpr int   SLUDGE_DAMAGE        = 5;
 constexpr float SLUDGE_SLOW_FACTOR   = 0.5f;
 constexpr float SLUDGE_TRAIL_TTL     = 9.f;
@@ -60,7 +60,7 @@ constexpr float SLUDGE_RADIUS        = 16.f;
 
 // ── Enemy – ScorpionMech (boss) ───────────────────────────────────────────────
 constexpr float BOSS_SPEED         = 120.f;
-constexpr int   BOSS_HP            = 600;
+constexpr int   BOSS_HP            = 800;
 constexpr int   BOSS_DAMAGE        = 50;
 constexpr float BOSS_PHASE2_THRESH = 0.5f;
 constexpr float BOSS_RADIUS        = 40.f;
